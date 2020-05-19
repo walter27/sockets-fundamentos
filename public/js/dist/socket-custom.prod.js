@@ -1,0 +1,1 @@
+"use strict";var socket=io();socket.on("connect",function(){console.log("Conectado al servidor")}),socket.on("disconnect",function(){console.log("Perdimos conexion con el servidr")}),socket.on("enviarMensajeCliente",function(o){console.log("Servidor",o)}),socket.emit("enviarMensajeServidor",{usuario:"walter",mensaje:"Hola mundo"},function(o){console.log("respuesta servidor",o)});
